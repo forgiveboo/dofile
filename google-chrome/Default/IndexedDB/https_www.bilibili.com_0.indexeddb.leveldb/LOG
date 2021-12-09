@@ -1,6 +1,0 @@
-2021/12/09-17:34:06.832 382cb Creating DB /home/forgiveboo/.config/google-chrome/Default/IndexedDB/https_www.bilibili.com_0.indexeddb.leveldb since it was missing.
-2021/12/09-17:34:06.847 382cb Reusing MANIFEST /home/forgiveboo/.config/google-chrome/Default/IndexedDB/https_www.bilibili.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/12/09-17:50:25.389 386db Level-0 table #5: started
-2021/12/09-17:50:25.392 386db Level-0 table #5: 2679 bytes OK
-2021/12/09-17:50:25.407 386db Delete type=0 #3
-2021/12/09-17:50:25.407 386db Manual compaction at level-0 from (begin) .. (end); will stop at (end)
