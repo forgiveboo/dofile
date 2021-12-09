@@ -1,0 +1,12 @@
+2021/12/09-15:45:46.455 3454a Reusing MANIFEST /home/forgiveboo/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2021/12/09-15:45:46.455 3454a Recovering log #17
+2021/12/09-15:45:46.456 3454a Reusing old log /home/forgiveboo/.config/google-chrome/Default/Sync Data/LevelDB/000017.log 
+2021/12/09-16:36:09.857 35db8 Level-0 table #22: started
+2021/12/09-16:36:09.874 35db8 Level-0 table #22: 121836 bytes OK
+2021/12/09-16:36:09.875 35db8 Delete type=0 #17
+2021/12/09-17:10:36.478 36f3f Level-0 table #24: started
+2021/12/09-17:10:36.484 36f3f Level-0 table #24: 118359 bytes OK
+2021/12/09-17:10:36.496 36f3f Delete type=0 #21
+2021/12/09-17:38:02.189 38263 Level-0 table #26: started
+2021/12/09-17:38:02.199 38263 Level-0 table #26: 153185 bytes OK
+2021/12/09-17:38:02.220 38263 Delete type=0 #23

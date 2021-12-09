@@ -1,0 +1,276 @@
+<amino-inspect-toolbar class="amino-inspect-toolbar right">
+	<style>
+		:root {
+			--global-transition: all 0.2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+			--color-950: #202225;
+		}
+
+		amino-inspect-toolbar {
+			visibility: visible;
+			opacity: 1;
+			transition: var(--global-transition);
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+			position: fixed;
+			top: 20px;
+			z-index: 999999999999999999999999999999;
+		}
+
+		amino-inspect-toolbar .absolute-center {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		amino-inspect-toolbar.right {
+			right: 20px;
+		}
+
+		amino-inspect-toolbar.left {
+			left: 20px;
+		}
+
+		amino-inspect-toolbar-list {
+			margin: 0 auto;
+			display: block;
+			list-style: none;
+			/* opacity: 0;
+			visibility: hidden; */
+			transition: opacity .2s ease-out;
+		}
+
+		amino-inspect-toolbar-wrap {
+			display: block;
+			position: relative;
+			z-index: 9999999999999999999;
+		}
+
+		amino-inspect-toolbar-wrap:hover amino-inspect-toolbar-list {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		amino-inspect-toolbar-list-item {
+			position: relative;
+			width: 40px;
+			height: 40px;
+			margin: 15px auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			border-radius: 50%;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+		}
+
+		amino-inspect-toolbar-list-item.active {
+			background-color: #7F78D2;
+		}
+
+		.amino-inspect-toolbar-icon {
+			display: block;
+			width: 20px !important;
+			height: 20px !important;
+		}
+
+		amino-inspect-toolbar-list-item.active .amino-inspect-toolbar-icon path {
+			fill: white !important;
+		}
+
+		amino-inspect-toolbar-list-item .feather {
+			stroke: var(--color-950);
+			width: 1.15rem;
+			height: 1.15rem;
+		}
+
+		amino-inspect-toolbar-list-item .hide {
+			display: none;
+		}
+
+		amino-inspect-toolbar-btn {
+			margin: 0 auto;
+			position: relative;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			cursor: pointer;
+			background-color: #27292C;
+			border-radius: 50%;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+		}
+
+		.amino-inspect-toolbar-btn-icon {
+			transition: all .2s;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		amino-inspect-toolbar.is-active .amino-inspect-toolbar-btn-icon-plus {
+			opacity: 0;
+			-webkit-transform: rotate(130deg);
+			transform: rotate(130deg);
+		}
+
+		.amino-inspect-toolbar-btn-icon-create {
+			opacity: 0;
+			-webkit-transform: rotate(-60deg);
+			transform: rotate(-60deg);
+		}
+
+		amino-inspect-toolbar.is-active .amino-inspect-toolbar-btn-icon-create {
+			opacity: 1;
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		.amino-inspect-toolbar .hide {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		amino-overlay-screen {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(32, 34, 37, 0.9);
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.5s ease all;
+			z-index: 99;
+		}
+
+		amino-overlay-screen.active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		amino-overlay-screen span {
+			margin-top: 18px;
+			display: block;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+			color: white;
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 1.5;
+			letter-spacing: .01rem;
+		}
+	</style>
+	<amino-inspect-toolbar-wrap style="z-index: 9999999999999999999">
+		<!-- Off Button -->
+		<amino-inspect-toolbar-btn>
+			<svg style="width: 16px; height: 18px;" class="amino-inspect-toolbar-btn-icon amino-inspect-toolbar-btn-icon-plus absolute-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.04 37.63">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: #fff;
+						}
+					</style>
+				</defs>
+				<g id="Layer_6" data-name="Layer 6">
+					<polygon class="cls-1" points="29.46 37.63 29.46 9.59 0 9.59 9.59 0 39.04 0 39.04 27.91 29.46 37.63" />
+					<polygon class="cls-1" points="10.42 37.63 20 27.91 20 19.08 10.42 19.08 10.42 37.63" />
+				</g>
+			</svg>
+			<svg style="width: 12px; height: 12px;" class="amino-inspect-toolbar-btn-icon amino-inspect-toolbar-btn-icon-create absolute-center" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: white;
+						}
+					</style>
+				</defs>
+				<path class="cls-1" d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+			</svg>
+		</amino-inspect-toolbar-btn>
+		<amino-inspect-toolbar-list>
+			<amino-inspect-toolbar-list-item class="selectors active">
+					<svg class="amino-inspect-toolbar-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+						<style type="text/css">
+							.st0 {
+								fill: #202225;
+							}
+						</style>
+						<g>
+							<defs>
+								<rect id="SVGID_1_" x="7" y="7" width="36" height="36"/>
+							</defs>
+							<clipPath id="SVGID_2_">
+								<use xlink:href="#SVGID_1_" style="overflow:visible;"/>
+							</clipPath>
+						</g>
+						<g>
+							<path class="st0" d="M10.6,17C9.7,17,9,16.3,9,15.5v-1.6c0-2.6,2.1-4.7,4.7-4.7h1.6c0.9,0,1.6,0.7,1.6,1.6s-0.7,1.6-1.6,1.6h-1.6
+							c-0.9,0-1.6,0.7-1.6,1.6v1.6C12.1,16.3,11.4,17,10.6,17z"/>
+							<path class="st0" d="M38.8,17c-0.9,0-1.6-0.7-1.6-1.6v-1.6c0-0.9-0.7-1.6-1.6-1.6h-1.6c-0.9,0-1.6-0.7-1.6-1.6s0.7-1.6,1.6-1.6h1.6
+							c2.6,0,4.7,2.1,4.7,4.7v1.6C40.3,16.3,39.6,17,38.8,17z"/>
+							<path class="st0" d="M27.8,12.3h-6.3c-0.9,0-1.6-0.7-1.6-1.6s0.7-1.6,1.6-1.6h6.3c0.9,0,1.6,0.7,1.6,1.6S28.7,12.3,27.8,12.3z"/>
+							<path class="st0" d="M24.7,40.5h-3.1c-0.9,0-1.6-0.7-1.6-1.6s0.7-1.6,1.6-1.6h3.1c0.9,0,1.6,0.7,1.6,1.6S25.5,40.5,24.7,40.5z"/>
+							<path class="st0" d="M15.3,40.5h-1.6c-2.6,0-4.7-2.1-4.7-4.7v-1.6c0-0.9,0.7-1.6,1.6-1.6c0.9,0,1.6,0.7,1.6,1.6v1.6
+							c0,0.9,0.7,1.6,1.6,1.6h1.6c0.9,0,1.6,0.7,1.6,1.6S16.1,40.5,15.3,40.5z"/>
+							<path class="st0" d="M10.6,29.6C9.7,29.6,9,28.9,9,28v-6.3c0-0.9,0.7-1.6,1.6-1.6c0.9,0,1.6,0.7,1.6,1.6V28
+							C12.1,28.9,11.4,29.6,10.6,29.6z"/>
+							<path class="st0" d="M38.8,26.4c-0.9,0-1.6-0.7-1.6-1.6v-3.1c0-0.9,0.7-1.6,1.6-1.6s1.6,0.7,1.6,1.6v3.1
+							C40.3,25.7,39.6,26.4,38.8,26.4z"/>
+							<path class="st0" d="M44.7,38.4L29.9,23.6c-0.2-0.2-0.4-0.3-0.7-0.3c-0.6,0-1,0.5-1,1v21.4c0,0.6,0.5,1,1,1c0.3,0,0.5-0.1,0.7-0.3
+							l6.1-6.4H44c0.6,0,1-0.5,1-1C45,38.8,44.9,38.6,44.7,38.4z"/>
+						</g>
+					</svg>
+			</amino-inspect-toolbar-list-item>
+			<amino-inspect-toolbar-list-item class="drops">
+					<svg class="amino-inspect-toolbar-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0)">
+					<path d="M26.2877 13.8297C25.966 13.508 25.4449 13.508 25.1232 13.8297L21.829 17.1239C21.5073 17.4456 21.5073 17.9668 21.829 18.2885L22.8938 19.3533L11.2634 30.9837C10.4857 31.7622 10.0579 32.7964 10.0579 33.8951C10.0579 34.9937 9.73534 36.0577 9.12576 36.9729L7.27672 39.7477C6.84081 40.4015 6.92764 41.2709 7.4826 41.8258L8.17424 42.5175C8.49272 42.8359 8.91414 43 9.33962 43C9.65572 43 9.97335 42.9091 10.2525 42.7233L13.1727 40.777C13.9914 40.231 14.9453 39.9422 15.9313 39.9422C17.0629 39.9422 18.1527 39.4733 18.9191 38.657C20.9904 36.4554 27.3466 30.2458 30.6166 27.0762L31.7115 28.1711C31.8724 28.3319 32.0831 28.4124 32.2938 28.4124C32.5045 28.4124 32.7152 28.3319 32.876 28.1711L36.1703 24.8768C36.492 24.5551 36.492 24.034 36.1703 23.7123L26.2877 13.8297ZM16.5184 36.4011C16.3737 36.5555 16.1541 36.648 15.9313 36.648C14.7973 36.648 13.6891 36.8781 12.6628 37.3204C13.1165 36.2419 13.3521 35.0806 13.3521 33.8951C13.3521 33.6723 13.4357 33.4696 13.5934 33.312L25.2229 21.6825L28.2874 24.747C25.2528 27.6885 18.734 34.046 16.5184 36.4011Z" fill="#202225"/>
+					<path d="M36.9748 7C35.3647 7 33.8514 7.62721 32.7144 8.76497L28.781 12.6985C28.4613 13.0181 28.4613 13.5358 28.781 13.8554L36.1446 21.219C36.3044 21.3788 36.5138 21.4587 36.7231 21.4587C36.9324 21.4587 37.1418 21.3788 37.3016 21.219L41.2351 17.2856C42.3737 16.1462 43.0001 14.6336 43.0001 13.0252C43.0001 9.70307 40.2971 7 36.9748 7Z" fill="#202225"/>
+					</g>
+					<defs>
+					<clipPath id="clip0">
+					<rect width="36" height="36" fill="white" transform="translate(7 7)"/>
+					</clipPath>
+					</defs>
+					</svg>
+			</amino-inspect-toolbar-list-item>
+			<amino-inspect-toolbar-list-item class="side">
+				<span style="margin-top: -3px">
+					<svg width="6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 14">
+						<path d="M3.5,7l5.25,5.25L7,14,0,7,7,0,8.75,1.75Z" fill="343A40" />
+					</svg>
+				</span>
+				<span style="margin-top: -3px" class="hide">
+					<svg width="6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 14">
+						<path d="M0,1.75,1.78,0l7,7-7,7L0,12.25,5.25,7Z" fill="343A40" />
+					</svg>
+				</span>
+			</amino-inspect-toolbar-list-item>
+		</amino-inspect-toolbar-list>
+	</amino-inspect-toolbar-wrap>
+	<amino-overlay-screen>
+		<svg style="display: block; width: 32px; height: 32px;" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.04 37.63">
+			<defs>
+				<style>
+					.cls-1 {
+						fill: #fff;
+					}
+				</style>
+			</defs>
+			<g id="Layer_6" data-name="Layer 6">
+				<polygon class="cls-1" points="29.46 37.63 29.46 9.59 0 9.59 9.59 0 39.04 0 39.04 27.91 29.46 37.63" />
+				<polygon class="cls-1" points="10.42 37.63 20 27.91 20 19.08 10.42 19.08 10.42 37.63" />
+			</g>
+		</svg>
+		<span>Amino Inspector</span>
+	</amino-overlay-screen>
+</amino-inspect-toolbar>

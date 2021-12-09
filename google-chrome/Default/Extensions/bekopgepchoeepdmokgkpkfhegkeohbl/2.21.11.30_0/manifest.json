@@ -1,0 +1,68 @@
+{
+   "background": {
+      "scripts": [ "backgroundscript.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon_128.png",
+         "16": "images/icon_16.png",
+         "240": "images/icon_240.png",
+         "48": "images/icon_48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Language Learning With Netflix and YouTube"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "youtube/styles.css" ],
+      "js": [ "youtube/contentscript.js" ],
+      "matches": [ "http://www.youtube.com/*", "https://www.youtube.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "css": [ "netflix/styles.css" ],
+      "js": [ "netflix/contentscript.js" ],
+      "matches": [ "http://www.netflix.com/*", "https://www.netflix.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "appforlanguage/contentscript.js" ],
+      "matches": [ "https://appforlanguage.com/auth/google*", "http://www.appforlanguage.com/auth/google*" ]
+   }, {
+      "js": [ "payment/contentscript.js" ],
+      "matches": [ "https://appforlanguage.com/pay", "http://www.appforlanguage.com/pay" ]
+   }, {
+      "js": [ "paymentpage/contentscript.js" ],
+      "matches": [ "https://appforlanguage.com/pay/subscription-result*", "http://www.appforlanguage.com/pay/subscription-result*" ]
+   }, {
+      "js": [ "cancelpage/contentscript.js" ],
+      "matches": [ "https://appforlanguage.com/cancel", "http://www.appforlanguage.com/cancel" ]
+   }, {
+      "js": [ "cancelStripePage/contentscript.js" ],
+      "matches": [ "https://appforlanguage.com/cancelStripePage", "http://www.appforlanguage.com/cancelStripePage" ]
+   }, {
+      "js": [ "packages/contentscript.js" ],
+      "matches": [ "https://appforlanguage.com/pay/packages", "http://www.appforlanguage.com/pay/packages" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "Language Learning with Netflix for Chrome (LLN) & Language Learning with YouTube (LLY)",
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "240": "images/icon_240.png",
+      "48": "images/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAui7QgWcTIZ6I9RbAPp7kxU4ca/r6FCpWVyc+9zorDu/bWIBFsGfsEgwe5WoqiSgG4nicRXgeVGTiFKCpl+BAfLXoDJPum4Pz5zVWVPc96g+YFf7nJDqJr0/y25jUx0Suj9XZ98nDmE6y/xgu61TWCm2l7GGqT/+70gC7nZ32K44IJ0jFGBlaQTCyEu4ZwccrbyaoPS8eGdjbRZg3rrpIwGjsJ3oX8/kGpnby01MatahcAodpqvYVmCUffJ1Hjpe/3JgetXA2Lf8366WMUSZ2DnSeOyJDM9eY8r3i2iYN6Pxv/aGYOUQpX2FNK05sSMO7F8j8mx+q7h4jCTG4sXUcSQIDAQAB",
+   "manifest_version": 2,
+   "name": "Language Learning with Netflix & YouTube",
+   "permissions": [ "https://clients5.google.com/", "https://glosbe.com/", "storage", "tts", "https://appforlanguage.com/", "tabs" ],
+   "tts_engine": {
+      "voices": [ {
+         "event_types": [ "start", "marker", "end" ],
+         "voice_name": "Alice"
+      } ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.21.11.30",
+   "web_accessible_resources": [ "*" ]
+}

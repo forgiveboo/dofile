@@ -1,0 +1,109 @@
+<div id="lly-subtitle-upload-box">
+    <p>Upload subtitles</p>
+    <div style="display: none;">
+        <label>
+            <span class="lly-label-text">subtitles upload language:</span>
+            <select id="upload_dest-lang" name="upload_dest-lang" class="selectbox">
+                <option disabled selected value> select Language </option>
+                <option value="af">Afrikaans</option>
+                <option value="ar" data-rtl="true">Arabic (العربية)</option>
+                <option value="bn">Bengali (বাংলা)</option>
+                <option value="bs">Bosnian (bosanski)</option>
+                <option value="bg">Bulgarian (български)</option>
+                <option value="ca">Catalan (català)</option>
+                <option value="zh-Hans">Chinese Simplified (中文简体)</option>
+                <option value="zh-Hant">Chinese Traditional (中文繁體)</option>
+                <option value="hr">Croatian (Hrvatski)</option>
+                <option value="cs">Czech (čeština)</option>
+                <option value="da">Danish (dansk)</option>
+                <option value="nl">Dutch (Nederlands)</option>
+                <option value="en">English</option>
+                <option value="et">Estonian (eesti keel)</option>
+                <option value="tl">Filipino</option>
+                <option value="fi">Finnish (suomi)</option>
+                <option value="fr">French (français)</option>
+                <option value="de">German (Deutsch)</option>
+                <option value="el">Greek (ελληνικά)</option>
+                <option value="ht">Haitian Creole (Kreyòl ayisyen)</option>
+                <option value="iw" data-rtl="true">Hebrew (עברית)</option>
+                <option value="hi">Hindi (हिन्दी)</option>
+                <option value="hmn">Hmong</option>
+                <option value="hu">Hungarian (magyar)</option>
+                <option value="is">Icelandic (Íslenska)</option>
+                <option value="id">Indonesian (Bahasa)</option>
+                <option value="it">Italian (italiano)</option>
+                <option value="ja">Japanese (日本語)</option>
+                <option value="ko">Korean (한국어)</option>
+                <option value="lv">Latvian (latviešu valoda)</option>
+                <option value="lt">Lithuanian (lietuvių kalba)</option>
+                <option value="mg">Malagasy (Fiteny Malagasy)</option>
+                <option value="ms">Malay (Bahasa melayu)</option>
+                <option value="mt">Maltese (Malti)</option>
+                <option value="no">Norwegian (Norsk)</option>
+                <option value="fa" data-rtl="true">Persian (فارسى)</option>
+                <option value="pl">Polish (polski)</option>
+                <option value="pt">Portuguese (português)</option>
+                <option value="ro">Romanian (limba română)</option>
+                <option value="ru">Russian (Русский)</option>
+                <option value="sr">Serbian (српски)</option>
+                <option value="sk">Slovak (slovenčina)</option>
+                <option value="sl">Slovenian (slovenščina)</option>
+                <option value="es">Spanish (español)</option>
+                <option value="sw">Swahili (Kiswahili)</option>
+                <option value="sv">Swedish (Svenska)</option>
+                <option value="ta">Tamil (தமிழ்)</option>
+                <option value="te">Telugu (తెలుగు)</option>
+                <option value="th">Thai (ภาษาไทย)</option>
+                <option value="tr">Turkish (Türkçe)</option>
+                <option value="uk">Ukrainian (Українська)</option>
+                <option value="ur" data-rtl="true">Urdu (اردو)</option>
+                <option value="vi">Vietnamese (tiếng việt)</option>
+                <option value="cy">Welsh (Cymraeg)</option>
+            </select>
+            <!-- <span data-toggle="tooltip" class="lly-info-btn"
+                title="This is the language of the sploaded(s). Set this to your native language." tabindex="0">
+                <span class="lly-svg-span lly-svg-info-tooltip"></span>
+            </span> -->
+
+        </label>
+    </div>
+    <div id="upload_subtitle" style="display: block;">
+        <input id="input_subs" type="file">
+    </div>
+    <hr>
+    <p><span>subtitles Delay - </span>(Seconds)<span> subtitles Delay + </span></p>
+    <div class='ctrl'>
+        <div class='ctrl__button ctrl__button--decrement decrementmany' id="button_decrement_many">-3</div>
+        <div class='ctrl__button ctrl__button--decrement' id="button_decrement_low">-0.1</div>
+        <div class='ctrl__counter'>
+            <input class='ctrl__counter-input' min='-60' max="60" type='number' value='0' onkeydown="return false">
+            <div class='ctrl__counter-num'>0</div>
+        </div>
+        <div class='ctrl__button ctrl__button--increment' id="button_increment_low">+0.1</div>
+        <div class='ctrl__button ctrl__button--increment incremenmany' id="button_increment_many">+3</div>
+    </div>
+    <hr>
+    <!-- <p>Tools for syncronise subtitile</p> -->
+    <!-- <p id="guidearrow">use ArrowDown or ArrowDown</p> -->
+
+    <!-- <div>
+        <label for="SecondarySubtitleTimeAlign">seconds:</label>
+        <input type="number" id="SecondarySubtitleTimeAlign" step="0.1" name="quantity" min="-60" max="60">
+    </div> -->
+    <!-- <div>
+        <label>
+            <span class="lly-label-text">Play/Pause video</span>
+            <input type="checkbox" name="play-pause-video" id="lly-play-pause-video" class="lly-toggle">
+
+        </label>
+    </div>
+    <br> -->
+    <!-- <div>
+        <label>
+            <span class="lly-label-text">Always show Subtitle</span>
+            <input type="checkbox" name="AlwaysShowSubtitle" id="AlwaysShowSubtitle" class="lly-toggle">
+
+        </label>
+    </div> -->
+    <button id="lly-subtitle-upload-button">Ok</button>
+</div>

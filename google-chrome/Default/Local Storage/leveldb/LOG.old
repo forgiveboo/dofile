@@ -1,0 +1,20 @@
+2021/12/09-15:42:10.216 3 Reusing MANIFEST /home/forgiveboo/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2021/12/09-15:42:10.222 3 Recovering log #50
+2021/12/09-15:42:10.234 3 Level-0 table #53: started
+2021/12/09-15:42:10.252 3 Level-0 table #53: 277264 bytes OK
+2021/12/09-15:42:10.256 3 Delete type=0 #50
+2021/12/09-15:44:26.931 7 Level-0 table #56: started
+2021/12/09-15:44:26.933 7 Level-0 table #56: 22245 bytes OK
+2021/12/09-15:44:26.939 7 Delete type=0 #54
+2021/12/09-15:45:26.931 9 Level-0 table #58: started
+2021/12/09-15:45:26.934 9 Level-0 table #58: 29614 bytes OK
+2021/12/09-15:45:26.936 9 Delete type=0 #55
+2021/12/09-15:45:26.936 9 Compacting 4@0 + 1@1 files
+2021/12/09-15:45:26.955 9 Generated table #59@0: 320 keys, 492354 bytes
+2021/12/09-15:45:26.955 9 Compacted 4@0 + 1@1 files => 492354 bytes
+2021/12/09-15:45:26.956 9 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/12/09-15:45:26.956 9 Delete type=2 #56
+2021/12/09-15:45:26.956 9 Delete type=2 #51
+2021/12/09-15:45:26.956 9 Delete type=2 #49
+2021/12/09-15:45:26.956 9 Delete type=2 #58
+2021/12/09-15:45:26.956 9 Delete type=2 #53

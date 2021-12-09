@@ -1,0 +1,152 @@
+<!-- Modal -->
+<div class="modal fade" id="lly-native-lang" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background-color: rgb(65, 65, 65);">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color: white;">LLNY - Languages</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 style="font-size: medium;margin-bottom: 20px; color: white;">Hi</h4>
+        <h4 style="font-size: medium;margin-bottom: 20px; color: white;">Please select your <span
+            style="color:#ff8303;">Upper subtitles (target language)</span>:</h4>
+        <div>
+          <select style="width: 250px; background-color: rgb(19 12 35); color: white;font-size: 1.2rem;"
+            id="Target_lang" class="browser-default custom-select" name="Target_lang">
+            <option disabled>Translation Language</option>
+            <option value="af">Afrikaans</option>
+            <option value="ar" data-rtl="true">Arabic (العربية)</option>
+            <option value="bn">Bengali (বাংলা)</option>
+            <option value="bs">Bosnian (bosanski)</option>
+            <option value="bg">Bulgarian (български)</option>
+            <option value="ca">Catalan (català)</option>
+            <option value="zh-CN">Chinese Simplified (中文简体)</option>
+            <option value="zh-TW">Chinese Traditional (中文繁體)</option>
+            <option value="hr">Croatian (Hrvatski)</option>
+            <option value="cs">Czech (čeština)</option>
+            <option value="da">Danish (dansk)</option>
+            <option value="nl">Dutch (Nederlands)</option>
+            <option value="en">English</option>
+            <option value="et">Estonian (eesti keel)</option>
+            <option value="tl">Filipino</option>
+            <option value="fi">Finnish (suomi)</option>
+            <option value="fr">French (français)</option>
+            <option value="de">German (Deutsch)</option>
+            <option value="el">Greek (ελληνικά)</option>
+            <option value="ht">Haitian Creole (Kreyòl ayisyen)</option>
+            <option value="iw" data-rtl="true">Hebrew (עברית)</option>
+            <option value="hi">Hindi (हिन्दी)</option>
+            <option value="hmn">Hmong</option>
+            <option value="hu">Hungarian (magyar)</option>
+            <option value="is">Icelandic (Íslenska)</option>
+            <option value="id">Indonesian (Bahasa)</option>
+            <option value="it">Italian (italiano)</option>
+            <option value="ja">Japanese (日本語)</option>
+            <option value="ko">Korean (한국어)</option>
+            <option value="lv">Latvian (latviešu valoda)</option>
+            <option value="lt">Lithuanian (lietuvių kalba)</option>
+            <option value="mg">Malagasy (Fiteny Malagasy)</option>
+            <option value="ms">Malay (Bahasa melayu)</option>
+            <option value="mt">Maltese (Malti)</option>
+            <option value="no">Norwegian (Norsk)</option>
+            <option value="fa" data-rtl="true">Persian (فارسى)</option>
+            <option value="pl">Polish (polski)</option>
+            <option value="pt">Portuguese (português)</option>
+            <option value="ro">Romanian (limba română)</option>
+            <option value="ru">Russian (Русский)</option>
+            <option value="sr">Serbian (српски)</option>
+            <option value="sk">Slovak (slovenčina)</option>
+            <option value="sl">Slovenian (slovenščina)</option>
+            <option value="es">Spanish (español)</option>
+            <option value="sw">Swahili (Kiswahili)</option>
+            <option value="sv">Swedish (Svenska)</option>
+            <option value="ta">Tamil (தமிழ்)</option>
+            <option value="te">Telugu (తెలుగు)</option>
+            <option value="th">Thai (ภาษาไทย)</option>
+            <option value="tr">Turkish (Türkçe)</option>
+            <option value="uk">Ukrainian (Українська)</option>
+            <option value="ur" data-rtl="true">Urdu (اردو)</option>
+            <option value="vi">Vietnamese (tiếng việt)</option>
+            <option value="cy">Welsh (Cymraeg)</option>
+          </select>
+        </div>
+      </div>
+      <p style="color: white;">You can change this language from the YouTube video settings</p>
+
+      <form>
+        <div class="modal-body">
+          <h4 style="font-size: medium;margin-bottom: 20px; color: white;">Please select your <span
+              style="color:#ff8303;">Lower subtitles (mother language)</span>:</h4>
+          <div>
+            <select style="width: 250px; background-color: rgb(19 12 35); color: white;font-size: 1.2rem;"
+              id="native_lang" class="browser-default custom-select" name="native_lang">
+              <option disabled>Translation Language</option>
+              <option value="af">Afrikaans</option>
+              <option value="ar" data-rtl="true">Arabic (العربية)</option>
+              <option value="bn">Bengali (বাংলা)</option>
+              <option value="bs">Bosnian (bosanski)</option>
+              <option value="bg">Bulgarian (български)</option>
+              <option value="ca">Catalan (català)</option>
+              <option value="zh-CN">Chinese Simplified (中文简体)</option>
+              <option value="zh-TW">Chinese Traditional (中文繁體)</option>
+              <option value="hr">Croatian (Hrvatski)</option>
+              <option value="cs">Czech (čeština)</option>
+              <option value="da">Danish (dansk)</option>
+              <option value="nl">Dutch (Nederlands)</option>
+              <option value="en">English</option>
+              <option value="et">Estonian (eesti keel)</option>
+              <option value="tl">Filipino</option>
+              <option value="fi">Finnish (suomi)</option>
+              <option value="fr">French (français)</option>
+              <option value="de">German (Deutsch)</option>
+              <option value="el">Greek (ελληνικά)</option>
+              <option value="ht">Haitian Creole (Kreyòl ayisyen)</option>
+              <option value="iw" data-rtl="true">Hebrew (עברית)</option>
+              <option value="hi">Hindi (हिन्दी)</option>
+              <option value="hmn">Hmong</option>
+              <option value="hu">Hungarian (magyar)</option>
+              <option value="is">Icelandic (Íslenska)</option>
+              <option value="id">Indonesian (Bahasa)</option>
+              <option value="it">Italian (italiano)</option>
+              <option value="ja">Japanese (日本語)</option>
+              <option value="ko" selected="selected">Korean (한국어)</option>
+              <option value="lv">Latvian (latviešu valoda)</option>
+              <option value="lt">Lithuanian (lietuvių kalba)</option>
+              <option value="mg">Malagasy (Fiteny Malagasy)</option>
+              <option value="ms">Malay (Bahasa melayu)</option>
+              <option value="mt">Maltese (Malti)</option>
+              <option value="no">Norwegian (Norsk)</option>
+              <option value="fa" data-rtl="true">Persian (فارسى)</option>
+              <option value="pl">Polish (polski)</option>
+              <option value="pt">Portuguese (português)</option>
+              <option value="ro">Romanian (limba română)</option>
+              <option value="ru">Russian (Русский)</option>
+              <option value="sr">Serbian (српски)</option>
+              <option value="sk">Slovak (slovenčina)</option>
+              <option value="sl">Slovenian (slovenščina)</option>
+              <option value="es">Spanish (español)</option>
+              <option value="sw">Swahili (Kiswahili)</option>
+              <option value="sv">Swedish (Svenska)</option>
+              <option value="ta">Tamil (தமிழ்)</option>
+              <option value="te">Telugu (తెలుగు)</option>
+              <option value="th">Thai (ภาษาไทย)</option>
+              <option value="tr">Turkish (Türkçe)</option>
+              <option value="uk">Ukrainian (Українська)</option>
+              <option value="ur" data-rtl="true">Urdu (اردو)</option>
+              <option value="vi">Vietnamese (tiếng việt)</option>
+              <option value="cy">Welsh (Cymraeg)</option>
+            </select>
+          </div>
+        </div>
+        <p style="color: white;">You can change this language from the Extension settings</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary save-native-lang">OK</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

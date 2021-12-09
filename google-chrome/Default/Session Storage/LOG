@@ -1,0 +1,24 @@
+2021/12/09-15:45:47.183 3 Reusing MANIFEST /home/forgiveboo/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2021/12/09-15:45:47.188 3 Recovering log #7
+2021/12/09-15:45:47.192 3 Reusing old log /home/forgiveboo/.config/google-chrome/Default/Session Storage/000007.log 
+2021/12/09-16:26:30.597 25 Level-0 table #11: started
+2021/12/09-16:26:30.614 25 Level-0 table #11: 19242 bytes OK
+2021/12/09-16:26:30.618 25 Delete type=0 #7
+2021/12/09-17:26:00.637 48 Level-0 table #13: started
+2021/12/09-17:26:00.645 48 Level-0 table #13: 37880 bytes OK
+2021/12/09-17:26:00.654 48 Delete type=0 #10
+2021/12/09-17:30:33.604 51 Level-0 table #15: started
+2021/12/09-17:30:33.610 51 Level-0 table #15: 17480 bytes OK
+2021/12/09-17:30:33.616 51 Delete type=0 #12
+2021/12/09-17:50:32.309 53 Level-0 table #17: started
+2021/12/09-17:50:32.313 53 Level-0 table #17: 19818 bytes OK
+2021/12/09-17:50:32.315 53 Delete type=0 #14
+2021/12/09-17:50:32.315 53 Compacting 4@0 + 1@1 files
+2021/12/09-17:50:32.330 53 Generated table #18@0: 591 keys, 49557 bytes
+2021/12/09-17:50:32.330 53 Compacted 4@0 + 1@1 files => 49557 bytes
+2021/12/09-17:50:32.336 53 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/12/09-17:50:32.339 53 Delete type=2 #11
+2021/12/09-17:50:32.339 53 Delete type=2 #17
+2021/12/09-17:50:32.339 53 Delete type=2 #15
+2021/12/09-17:50:32.339 53 Delete type=2 #8
+2021/12/09-17:50:32.340 53 Delete type=2 #13

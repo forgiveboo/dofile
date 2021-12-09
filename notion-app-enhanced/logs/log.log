@@ -1,0 +1,228 @@
+[2021-12-09 05:20:10.283] [info] Checking for update
+[2021-12-09 05:20:10.345] [info] Error reading /home/forgiveboo/.config/notion-app-enhanced/cookies.json {
+  constructor: 'Error',
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/home/forgiveboo/.config/notion-app-enhanced/cookies.json',
+  stack: "Error: /home/forgiveboo/.config/notion-app-enhanced/cookies.json: ENOENT: no such file or directory, open '/home/forgiveboo/.config/notion-app-enhanced/cookies.json'\n" +
+    '    at Object.openSync (fs.js:466:3)\n' +
+    '    at Object.func [as openSync] (electron/js2c/asar_bundle.js:5:1812)\n' +
+    '    at Object.readFileSync (fs.js:368:35)\n' +
+    '    at Object.e.readFileSync (electron/js2c/asar_bundle.js:5:8592)\n' +
+    '    at Object.readFileSync (/opt/Notion Enhanced/resources/app/node_modules/jsonfile/index.js:61:22)\n' +
+    '    at JsonStore.loadSync (/opt/Notion Enhanced/resources/app/main/JsonStore.js:37:44)\n' +
+    '    at new JsonStore (/opt/Notion Enhanced/resources/app/main/JsonStore.js:14:14)\n' +
+    '    at Object.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:24:25)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1152:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1173:10)'
+}
+[2021-12-09 05:20:10.651] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'latestVersionPath',
+  data: {
+    message: 'latestVersion.json path /home/forgiveboo/.config/notion-app-enhanced/notionAssetCache-v2/latestVersion.json'
+  }
+}
+[2021-12-09 05:20:10.654] [error] Error: Error: ENOENT: no such file or directory, open '/opt/Notion Enhanced/resources/app-update.yml'
+[2021-12-09 05:20:10.656] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'errorReadingPath',
+  error: {
+    name: 'Error',
+    message: "ENOENT: no such file or directory, open '/home/forgiveboo/.config/notion-app-enhanced/notionAssetCache-v2/latestVersion.json'",
+    stack: "Error: ENOENT: no such file or directory, open '/home/forgiveboo/.config/notion-app-enhanced/notionAssetCache-v2/latestVersion.json'"
+  },
+  data: {
+    message: 'Error reading /home/forgiveboo/.config/notion-app-enhanced/notionAssetCache-v2/latestVersion.json'
+  }
+}
+[2021-12-09 05:20:10.657] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'currentVersionLoaded',
+  data: {}
+}
+[2021-12-09 05:20:10.658] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'syncVersionEmptyLatestVersion'
+}
+[2021-12-09 05:20:10.658] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'currentSyncedAssetsJson',
+  data: {}
+}
+[2021-12-09 05:20:10.685] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'unhandledRejection',
+  error: {
+    name: 'TypeError',
+    message: 'focused_window.isMaximized is not a function',
+    stack: 'TypeError: focused_window.isMaximized is not a function\n' +
+      '    at Object.__exports.createWindow (/opt/Notion Enhanced/resources/app/embedded_enhancer/mods/core/createWindow.js:42:43)\n' +
+      '    at handleActivate (/opt/Notion Enhanced/resources/app/main/main.js:71:36)\n' +
+      '    at startup (/opt/Notion Enhanced/resources/app/main/main.js:149:5)\n' +
+      '    at processTicksAndRejections (internal/process/task_queues.js:97:5)'
+  }
+}
+[2021-12-09 05:20:16.693] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:20:16.710] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:20:16.715] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:20:16.721] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:20:16.726] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:20:16.732] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:20:16.737] [info] {
+  level: 'error',
+  from: 'main',
+  type: 'uncaughtException',
+  error: {
+    name: 'TypeError',
+    message: 'One-time callback was called more than once',
+    stack: 'TypeError: One-time callback was called more than once\n' +
+      '    at ClientRequest.<anonymous> (/opt/Notion Enhanced/resources/app/main/schemeHandler.js:194:9)\n' +
+      '    at ClientRequest.emit (events.js:315:20)\n' +
+      '    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6293)\n' +
+      '    at SimpleURLLoaderWrapper.emit (events.js:315:20)'
+  }
+}
+[2021-12-09 05:30:10.352] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 05:30:11.116] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'appUpdateAvailable',
+  data: { version: '23.10.15.4' }
+}
+[2021-12-09 05:30:37.425] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate2' }
+[2021-12-09 05:30:37.425] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'appUpdateDownloadComplete',
+  data: { version: '23.10.15.4' }
+}
+[2021-12-09 05:30:37.427] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'installingAppUpdate',
+  data: { version: '23.10.15.4' }
+}
+[2021-12-09 05:40:10.364] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 05:40:11.184] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 05:50:10.376] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 05:50:11.330] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 06:00:10.389] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 06:00:11.133] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 13:19:32.462] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 13:19:33.420] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 13:29:32.473] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 13:29:33.620] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 13:39:32.483] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 13:39:33.975] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 13:49:32.491] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 13:49:33.727] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 13:59:32.497] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 13:59:33.484] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 14:09:32.504] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 14:09:33.748] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 14:19:32.512] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 14:19:34.425] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 14:29:32.517] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 14:29:34.316] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 14:39:32.520] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 14:39:33.435] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 14:49:32.527] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 14:49:33.708] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 14:59:32.530] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 14:59:33.259] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 15:09:32.534] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 15:09:33.786] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 15:19:32.537] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 15:19:33.356] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 15:29:32.541] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 15:29:33.318] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 15:39:32.543] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-12-09 15:39:33.566] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-12-09 15:41:24.921] [info] Quitting...
+[2021-12-09 15:41:24.926] [info] Killing child process

@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "icon16.png",
+         "48": "icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "react.js", "react-dom.js", "content.js" ],
+      "matches": [ "https://www.youtube.com/*", "https://m.youtube.com/*", "https://www.netflix.com/*", "https://www.primevideo.com/*", "https://www.disneyplus.com/*", "https://www.paramountplus.com/*", "https://www.amcplus.com/*", "https://www.peacocktv.com/*", "https://www.hulu.com/*", "https://play.hbomax.com/*", "https://www.viki.com/*", "https://www.hotstar.com/*", "https://www.coursera.org/*", "https://www.udemy.com/*", "https://www.ted.com/*", "https://www.ardmediathek.de/*", "https://www.zdf.de/*", "https://www.arte.tv/*", "https://vimeo.com/*", "https://viu.tv/*", "https://www.iq.com/*", "https://wetv.vip/*", "https://www.bilibili.com/*", "https://music.163.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt4pUTwydrFo6njm9mczqX3HrqhuzAKWsRtqjnitoEfHdvtrrWRF4Ia3mC+9FeMfLBdNlcmeT1GLyMXqvtk8sxxdVLXAzbKyocCJXG1BqaeLDwlY7MIeTPImBi1rrWG+nWgTDkqGeiR/JKCOCK0F+mj4NflgkKIeDL8aAX+JfvUfpXTXXeFJnBpIyvRcjo/fBjKd5o4X3o7Lkdj6fxDZW+vtmnQNAk3YwptCi87v94FfzQJxTecz2SgjQYsKzetKvydLbp8HjL64aXlc3r7oxMhrfJVn/1ytY76Bk7DxGyBqbhqc76BmMbLpQ/CwORTn4WGmpl3vboG24rfwM0dOzHwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "https://*.dualsub.xyz/*", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.76.5"
+}
